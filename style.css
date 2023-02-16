@@ -1,14 +1,14 @@
 @font-face{
-    font-family: NorseBold;
-    src: url(./Material/Norse-Bold.otf);
-}
-
-@font-face{
     font-family: Roboto;
     src: url(./Material/Roboto/Roboto-Medium.ttf);
 }
+@font-face{
+    font-family: El Messiri;
+    src: url(./Material/BattlesBridge/ElMessiri-VariableFont_wght.ttf);
+}
+
 :root{
-    --color:#596D48;
+    --color:rgb(230,114,27);
 }
 
 *{
@@ -29,7 +29,7 @@
     flex-flow: row wrap;
 }
 .picture{
-    background-image: url(./Material/photo-1585202900225-6d3ac20a6962.avif);
+    background-image: url(./Material/photo-1625509972901-9c6c8e8d1069.avif);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 
 .logo{
     height: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     position: relative;
     top: 20vh;
     gap: 1vw;
@@ -49,7 +49,10 @@
 }
 
 h1{
-    color: white;
+    color: black;
+    font-family: El Messiri;
+    font-size: 3rem;
+    margin-top: 1.2vh;
 }
 
 .head {
@@ -108,13 +111,9 @@ input{
 
 input:focus{
     outline: none;
-    border: 2px solid rgb(45, 147, 243);
+    border: 1px solid rgb(45, 147, 243);
 }
 
-input:invalid{
-    outline: none;
-    border: 2px solid rgba(255, 0, 0, 0.582);
-}
 
 button{
     background-color: var(--color);
@@ -135,7 +134,7 @@ button{
 
 a{
     text-decoration: none;
-    color: rgb(86, 138, 28);
+    color: var(--color);
     font-weight: 700;
 }
 
