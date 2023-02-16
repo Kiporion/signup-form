@@ -20,6 +20,8 @@
 .content{
     width: 100vw;
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Left Side */
@@ -31,7 +33,7 @@
 .picture{
     background-image: url(./Material/photo-1625509972901-9c6c8e8d1069.avif);
     background-position: center;
-    background-size: auto;
+    background-size:cover;
     background-repeat: no-repeat;
     width: 40vw;
 }
