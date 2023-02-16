@@ -48,6 +48,19 @@
     align-items: center;
 }
 
+.credit{
+    color: white;
+    height: auto;
+    position: relative;
+    top: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    gap:1vw;
+    padding: 0 15px;
+}
+
 h1{
     color: black;
     font-family: El Messiri;
@@ -118,7 +131,7 @@ input:focus{
 button{
     background-color: var(--color);
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.2em;
     border: 2px solid var(--color);
     border-radius: 5px;
@@ -127,19 +140,31 @@ button{
     cursor: pointer;
 }
 
+a{
+    color: white;
+}
+
 .log-in{
     display: flex;
+    
     gap: 5px;
 }
 
-a{
+.link{
     text-decoration: none;
-    color: var(--color);
     font-weight: 700;
+    color: var(--color);
 }
 
 a:hover{
-    color: var(--color);
+    color: rgb(255,187,0);
+}
+
+@media only screen and (max-width:835px){
+    .credit{
+        top:70vh;
+    }
+
 }
 
 /* Mobile Responsivity */
@@ -203,6 +228,9 @@ a:hover{
         margin-bottom: 0px;
         width: 60vw;
         padding: 10px 5px;
+    }
+    .credit{
+        display: none;
     }
 
 }
